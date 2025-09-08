@@ -19,6 +19,7 @@ This is a simple **Node.js** application containerized using **Docker**. The app
 - **Docker** - Containerization
 - **MongoDB / JSON / Any Storage** (depending on your setup)
 - **MongoExpress** - User interface for mongoDB
+- **Docker Volumes** - For presistent data storage for containers.
 
 ---
 
