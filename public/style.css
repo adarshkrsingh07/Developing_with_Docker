@@ -1,0 +1,164 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    animation: fadeInBody 1.1.s ease-in-out;
+}
+
+/* Fade-in animation for the entire page */
+@keyframes fadeInBody {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Heading styling with animation */
+h1 {
+    color: #064279;
+    margin-bottom: 0.3rem;
+    font-size: 1.8rem;
+    animation: slideDown 1s ease-in-out;
+}
+
+/* Slide-down animation */
+@keyframes slideDown {
+    from {
+        transform: translateY(-40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Paragraph fade-in */
+p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    animation: fadeInText 1.5s ease-in-out;
+}
+
+/* Fade-in text */
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Form container */
+form {
+    background-color: #ffffff;
+    border: 1px solid #e1e1e1;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    padding: 2rem 2.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 350px;
+    animation: fadeUpForm 1.3s ease-in-out;
+}
+
+/* Form fade-up effect */
+@keyframes fadeUpForm {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Input fields */
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #333;
+}
+
+input {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+
+/* Input focus animation */
+input:focus {
+    border-color: #077fe9;
+    box-shadow: 0 0 6px rgba(7, 127, 233, 0.4);
+    transform: scale(1.02);
+}
+
+/* Create Account Button */
+#formBtn {
+    background-color: #1a6fd1;
+    color: #fff;
+    border: none;
+    padding: 0.8rem;
+    font-size: 1.05rem;
+    font-weight: bold;
+    border-radius: 2rem;  /* Fully rounded button */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: center;
+    width: 60%;
+    animation: bounceBtn 1.5s ease-in-out infinite alternate;
+}
+
+/* Button hover effect */
+#formBtn:hover {
+    background-color: #0569c1;
+    transform: scale(1.08);
+    box-shadow: 0 4px 15px rgba(7, 127, 233, 0.4);
+}
+
+/* Bouncing animation for button 
+@keyframes bounceBtn {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-5px);
+    }
+}
+*/  
+/* Responsive design */
+@media (max-width: 480px) {
+    form {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    #formBtn {
+        width: 80%;
+    }
+}
