@@ -24,3 +24,13 @@ This is a simple **Node.js** application containerized using **Docker**. The app
 
 ## 📂 Project Structure
 
+```bash
+├── Dockerfile
+├── docker-compose.yml   # If used
+├── package.json
+├── server.js            # Main app/server file
+├── routes/              # API routes
+├── models/              # Database models
+├── public/              # Static files (if any)
+└── README.md 
+
