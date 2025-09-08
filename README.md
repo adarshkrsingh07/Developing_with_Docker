@@ -32,5 +32,18 @@ This is a simple **Node.js** application containerized using **Docker**. The app
 ├── routes/              # API routes
 ├── models/              # Database models
 ├── public/              # Static files (if any)
-└── README.md 
+└── README.md
+```
+## ⚙️ Installation & Setup
+- Clone the Repository
+```bash
+  git clone https://github.com/adarshkrsingh07/Developing_with_Docker.git
+  ```
+- Navigate to the directory
+```bash
+   cd <dir_name>
+```
+- Run the Container
+```bash
+  docker compose -f mongodb.yaml up -d
 
