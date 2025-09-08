@@ -46,4 +46,10 @@ This is a simple **Node.js** application containerized using **Docker**. The app
 - Run the Container
 ```bash
   docker compose -f mongodb.yaml up -d
+```
+- Access the Application
+
+Node.js App: http://localhost:5050
+
+Mongo Express: http://localhost:8081
 
